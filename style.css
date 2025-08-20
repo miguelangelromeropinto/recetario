@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #2c3e50;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+  background: #e67e22;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.card button {
+  margin-top: auto;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card button.edit { background: #3498db; color: white; }
+.card button.delete { background: #e74c3c; color: white; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  margin: 5% auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
