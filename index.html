@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Recetario</h1>
+    <button id="add-recipe-btn">Añadir Receta</button>
+  </header>
+
+  <main id="recipes-container"></main>
+
+  <!-- Modal -->
+  <div id="recipe-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Nueva Receta</h2>
+      <form id="recipe-form">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="temperatura" placeholder="Temperatura">
+        <input type="text" id="tiempo" placeholder="Tiempo">
+        <textarea id="ingredientes" placeholder="Ingredientes"></textarea>
+        <textarea id="preparacion" placeholder="Preparación"></textarea>
+        <input type="text" id="imagen" placeholder="URL de imagen">
+        <div>
+          <button type="button" id="take-photo">Tomar foto</button>
+          <input type="file" id="imagen-file" accept="image/*" style="display:none;">
+        </div>
+        <img id="preview-img" src="" alt="Preview" style="width:100%; margin-top:0.5rem; display:none;">
+        <input type="text" id="video" placeholder="URL del video (YouTube, TikTok)">
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
