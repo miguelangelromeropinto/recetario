@@ -1,5 +1,5 @@
-const repoOwner = "TU_USUARIO";
-const repoName = "TU_REPO";
+const repoOwner = "miguelangelromeropinto";
+const repoName = "recetario";
 const token = "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"; // Token con permisos de repo
 const branch = "main";
 
